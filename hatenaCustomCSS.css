@@ -1,0 +1,84 @@
+/* <system section="theme" selected="8599973812333959601"> */
+@import url("https://usercss.blog.st-hatena.com/-/theme/8599973812333959601.css?version=6393a61d4f723883aa0cd2863caba7e86fc9802f");
+/* </system> */
+
+/*  ここからカスタム */
+/* code boxの見た目 */
+/* ソースコードのフォントはちょっと小さめにする */
+pre {
+  font-size: 90%;
+}
+
+/*code-lineクラスの数でカウント*/
+.code-line {
+  counter-increment: linenumber;
+}
+
+/*行番号を擬似要素として表示*/
+.code-line::before {
+  content: counter(linenumber);
+  display:inline-block;
+  color: #ccc;
+  text-align: right;
+  width: 35px;
+  padding: 0 15px 0 0;
+}
+
+/*コードブロックに言語名を表示*/
+pre.code:before {
+  content: attr(data-lang);
+  display: inline-block;
+  background: #454545;
+  color: #fff;
+  padding: 0.5px 0px;
+  padding-left: 1%;
+  border-radius: 4px 4px 0 0;
+  position: absolute;
+  margin-left: -10px;
+  margin-top: -30px;
+}
+
+pre.code {
+  padding-top: 30px !important;
+}
+
+/*Monokai*/
+.entry-content pre.code {
+  background-color: #272822;      /*背景色*/
+  color: #F8F8F2;                 /*テキスト*/
+}
+
+.synComment { color: #75715E }      /*コメント*/
+.synSpecial { color: #E6DB74 }      /*特殊文字*/
+.synType { color: #66D9EF }         /*型*/
+.synPreProc { color: #F92672 }      /*プリプロセッサ*/
+.synStatement { color: #F92672 }    /*ステートメント*/
+.synIdentifier { color: #F8F8F2 }   /*識別子*/
+.synConstant { color: #AE81FF }     /*定数*/
+
+/*　！　囲み枠 */
+/*ビックリマークのアイコンをつけた囲み枠 */
+.box82 {
+margin: 2em auto;
+padding:1em 2em 2em;
+background-color: #EFE3DF; /* 背景色 */
+border-radius:1px;/*ボックス角の丸み*/
+box-shadow: 0px 1px 3px rgba(0,0,0,0.1);/*ボックス影*/
+}
+
+.box82 .box-title {
+color: #cca497; /* タイトル文字色 */
+font-size: 18px;
+font-weight: bold;
+}
+
+.box82 .box-title:before {
+font-family: "Font Awesome 5 Free";
+content: "\f06a";
+font-size: 18px;
+margin: 0 3px 0 0;
+font-weight: bold;
+}
+
+
+
