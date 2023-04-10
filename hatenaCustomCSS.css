@@ -85,6 +85,10 @@ font-weight: bold;
 	background: linear-gradient(transparent 70%, #FFFF00 70%);
 }
 
-.entry-content italic {
-	background: linear-gradient(transparent 70%, #FF00ff 70%);
+.entry-content em {
+  font-style: italic;
+  background-color: black;
+  color: white;
+  font-size: 80%;
 }
+
