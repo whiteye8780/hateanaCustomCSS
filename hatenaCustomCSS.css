@@ -92,6 +92,6 @@ font-weight: bold;
 　box-decoration-break: clone;	
   -webkit-box-decoration-break: clone;
   display: inline;
-  padding: .3em;
+  padding: .0em .3em .0em .3em;
 }
 
