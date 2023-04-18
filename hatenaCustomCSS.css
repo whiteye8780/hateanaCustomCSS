@@ -56,29 +56,6 @@ pre.code {
 .synIdentifier { color: #F8F8F2 }   /*識別子*/
 .synConstant { color: #AE81FF }     /*定数*/
 
-/*　！　囲み枠 */
-/*ビックリマークのアイコンをつけた囲み枠 */
-.box82 {
-margin: 2em auto;
-padding:1em 2em 2em;
-background-color: #EFE3DF; /* 背景色 */
-border-radius:1px;/*ボックス角の丸み*/
-box-shadow: 0px 1px 3px rgba(0,0,0,0.1);/*ボックス影*/
-}
-
-.box82 .box-title {
-color: #cca497; /* タイトル文字色 */
-font-size: 18px;
-font-weight: bold;
-}
-
-.box82 .box-title:before {
-font-family: "Font Awesome 5 Free";
-content: "\f06a";
-font-size: 18px;
-margin: 0 3px 0 0;
-font-weight: bold;
-}
 
 /*   太字にアンダーラインを引く */
 .entry-content strong {
@@ -96,3 +73,152 @@ font-weight: bold;
   padding: .0em .8em .0em .8em;
 }
 
+
+/*----------- ポイント -----------*/
+.point {
+	margin: 2em auto;
+	padding:1em 2em 2em;
+	background-color: #fff9db; /* 背景色 */
+	border-radius:1px;/*ボックス角の丸み*/
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.1);/*ボックス影*/
+}
+	
+.point .point-title {
+	color: #6e4c1e ; /* タイトル文字色 */
+	font-size: 18px;
+	font-weight: bold;
+}
+	
+.point .point-title:before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f304";
+	font-size: 18px;
+	margin: 0 3px 0 0;
+	font-weight: bold;
+}
+
+
+/*----------- 後で読みたい -----------*/
+.related-posts {
+	position: relative;
+	margin: 2em 0;
+	padding: 0.5em 1em;
+	border: solid 3px #87CEFA;
+	border-radius: 8px;
+}
+.related-posts .related-posts-title {
+	position: absolute;
+	display: inline-block;
+	top: -13px;
+	left: 10px;
+	padding: 0 9px;
+	line-height: 1;
+	font-size: 19px;
+	background: var(--backgroud-color);
+	color: #87CEFA;
+	font-weight: bold;
+}
+.related-posts p {
+	margin: 0; 
+	padding: 0;
+}
+
+/*----------- 注意 -----------*/
+.cautionbox {
+    margin: 1em 0;
+    background-color: #FFCCBC;
+    padding: 1em;
+}
+
+.cautionbox-title {
+    color: #FF5722; 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cautionbox-title:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f06a";
+    font-size: 17px;
+}
+
+.cautionbox p {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*----------- 参考 -----------*/
+.reference{
+	margin: 1em 0;
+	background-color: #d0f0d1;
+	padding: 1em;
+}
+ 
+.reference-title{
+	color: #8b4513;
+	font-size: 18px;
+	font-weight: bold;
+ }
+ 
+.reference-title:before{
+	font-family: "Font Awesome 5 Free";
+	content: "\f0a4";
+	font-size: 17px;
+	color:  #8b4513;
+ }
+ 
+.reference p{
+	margin: 0;
+	padding: 0;
+}
+
+/*----------- 警告 -----------*/
+.warning{
+	margin: 1em 0;
+	background-color: #fff176;
+	padding: 1em;
+}
+ 
+.warning-title{
+	color: #654321;
+	font-size: 18px;
+	font-weight: bold;
+}
+ 
+.warning-title:before{
+	font-family: "Font Awesome 5 Free";
+	content: "\f071";
+	font-size: 17px;
+	color:  #654321;	
+}
+ 
+.warning p{
+	margin: 0;
+	padding: 0;
+}
+
+/*----------- まとめ -----------*/
+.summary{
+	margin: 1em 0;
+	background-color: #cfe7ea;
+	padding: 1em;
+}
+ 
+.summary-title{
+	color: #666666;
+	font-size: 18px;
+	font-weight: bold;
+}
+ 
+.summary-title:before{
+	font-family: "Font Awesome 5 Free";
+	content: "\f024";
+	font-size: 17px;
+	color:  #666666;
+}
+ 
+.summary p{
+	margin: 0;
+	padding: 0;
+}
